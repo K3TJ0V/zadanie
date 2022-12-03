@@ -1,0 +1,62 @@
+.fieldset{
+    max-width: fit-content;
+    margin-bottom: 16px;
+    border-radius: 16px;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 32px;
+    border: 1px solid black;
+    padding-bottom: 100px;
+    max-width: fit-content;
+}
+img{
+    transition-duration: 0.2s;
+    width: 100px;
+    border-radius: 16px;
+    animation: fadeIn 1s;
+}
+img:hover{
+    transform: scale(1.2);
+}
+div{
+    border-radius: 16px;
+    transition-duration: 0.2s;
+    animation: fadeIn 1s;
+}
+div:hover{
+    transform: scale(1.2);
+}
+
+.item-a{
+    grid-column: 1 / 2;
+}
+.item-b{
+    grid-column: 1;
+    grid-row: 2;
+}
+.item-c{
+    grid-column: 4;
+    grid-row: 2;
+}
+.item-d{
+    grid-column: 2 / 4;
+    grid-row: 3;
+    justify-self: center;
+    width: 200px;
+}
+.button{
+    margin-bottom: 16px;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
